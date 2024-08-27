@@ -17,6 +17,7 @@ const McuNode = () => {
   );
 };
 
+
 export default McuNode;
 
 const styles = StyleSheet.create({

@@ -2,7 +2,6 @@ import 'react-native-gesture-handler';
 import * as React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { Feather } from '@expo/vector-icons'
-import Feed from "../screens/hardware";
 import Profile from "../screens/Profile";
 import Home from "../screens/new";
 import Hardware from '../screens/hardware';
@@ -12,6 +11,7 @@ const Tab = createBottomTabNavigator();
 export default function TabRoutes(){
     return (
         <Tab.Navigator
+            initialRouteName='Início'
             screenOptions={{
                 tabBarInactiveTintColor: 'gray',
                 tabBarActiveTintColor: '#2266ff',
