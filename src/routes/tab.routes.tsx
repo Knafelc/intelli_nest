@@ -2,9 +2,10 @@ import 'react-native-gesture-handler';
 import * as React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { Feather } from '@expo/vector-icons'
-import Feed from "../screens/Feed";
+import Feed from "../screens/hardware";
 import Profile from "../screens/Profile";
 import Home from "../screens/new";
+import Hardware from '../screens/hardware';
 
 const Tab = createBottomTabNavigator();
 
@@ -18,7 +19,7 @@ export default function TabRoutes(){
         >
             <Tab.Screen
                 name="Hardware"
-                component={Feed}
+                component={Hardware}
                 options={{
                     tabBarIcon: ({color, size}) => <Feather name="cpu" color={color} size={size} />,
                     tabBarLabel: "Hardware",
